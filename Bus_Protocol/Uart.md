@@ -116,6 +116,12 @@ More like a hardware than protocol:
 * Data format and transmission speed is configurable.
 * UART contains a shift register, which is the fundamental method of conversion between serial and parallel forms.
 
+## Data  Format  : 
+* Start Bit : Indicates a start of transmission. Always `0`.
+* Data Bits : These hold the actual data, typically 7 or 8 bits.
+* Parity bit : Optional. Single bit for error checking odd or even.
+* Stop Bit : This marks the end of dat frame. It can be `1` or `2` bits.
+
 ## Reference Links
 
 https://aruneworld.com/embedded/embedded-protocol/uart/
